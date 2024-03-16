@@ -11,6 +11,7 @@ const Login = () => {
     
     const onSubmit=(e)=>{
         e.preventDefault()
+        console.log(email);
         signInWithEmailAndPassword(auth,email,password)
             .then((userCridential)=>{
                 console.log(userCridential);
